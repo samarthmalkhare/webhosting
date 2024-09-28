@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electronic Items - Price Comparison</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #F4F8FC;
+        }
+        .navbar {
+            background-color: #00293A;
+            color: white;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 50px;
+        }
+        .navbar img {
+            height: 40px;
+        }
+        .navbar-left {
+            display: flex;
+            align-items: center;
+        }
+        .navbar-left img {
+            margin-right: 15px;
+        }
+        .navbar-left span {
+            margin-right: 20px;
+        }
+        .navbar-right {
+            display: flex;
+            align-items: center;
+        }
+        .navbar-right span {
+            margin-left: 20px;
+            cursor: pointer;
+        }
+        .search-bar {
+            width: 100%;
+            max-width: 400px;
+            position: relative;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 8px;
+            border-radius: 20px;
+            border: none;
+            font-size: 16px;
+        }
+        .search-bar button {
+            position: absolute;
+            right: 10px;
+            top: 7px;
+            border: none;
+            background: none;
+            color: #555;
+            font-size: 18px;
+        }
+        /* Styles for the table */
+        .price-table {
+            width: 100%;
+            max-width: 1000px;
+            margin: 50px auto;
+            border-collapse: collapse;
+            background-color: white;
+        }
+        .price-table th, .price-table td {
+            padding: 15px;
+            border: 1px solid #E3E6EA;
+            text-align: left;
+        }
+        .price-table th {
+            background-color: #00293A;
+            color: white;
+        }
+        .price-table td {
+            text-align: center;
+        }
+        .product-image {
+            max-width: 100px;
+        }
+        .product-name {
+            text-align: left;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar Section -->
+    <div class="navbar">
+        <div class="navbar-left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Emblem_of_India_%28without_motto%29.svg/1200px-Emblem_of_India_%28without_motto%29.svg.png" alt="Indian Emblem" width="50px">
+            <span><b>Bharati warriors</b><br>Government e Marketplace</span>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search products">
+            <button>&#128269;</button>
+        </div>
+        <div class="navbar-right">
+            <span>Sign Up</span>
+            <span>Login</span>
+        </div>
+    </div>
+
+    <!-- Price Comparison Table -->
+    <table class="price-table">
+        <thead>
+            <tr>
+                <th>Product</th>
+                <th>Amazon Price</th>
+                <th>Flipkart Price</th>
+                <th>Meesho Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Example Row 1 -->
+            <tr>
+                <td class="product-name">
+                    <img src="https://m.media-amazon.com/images/I/71SGg6l6z5L._SL1500_.jpg" alt="Laptop" class="product-image">
+                    <span>Laptop (Dell Inspiron 15)</span>
+                </td>
+                <td>₹45,999</td>
+                <td>₹44,899</td>
+                <td>₹46,000</td>
+            </tr>
+            <!-- Example Row 2 -->
+            <tr>
+                <td class="product-name">
+                    <img src="https://m.media-amazon.com/images/I/61bElFtYz1L._SL1500_.jpg" alt="Printer" class="product-image">
+                    <span>HP Laser Printer</span>
+                </td>
+                <td>₹9,499</td>
+                <td>₹9,299</td>
+                <td>₹9,599</td>
+            </tr>
+            <!-- Example Row 3 -->
+            <tr>
+                <td class="product-name">
+                    <img src="https://m.media-amazon.com/images/I/41wYKW7WBnL._SL1000_.jpg" alt="CCTV Camera" class="product-image">
+                    <span>CP Plus CCTV Camera</span>
+                </td>
+                <td>₹3,299</td>
+                <td>₹3,099</td>
+                <td>₹3,499</td>
+            </tr>
+            <!-- Example Row 4 -->
+            <tr>
+                <td class="product-name">
+                    <img src="https://m.media-amazon.com/images/I/51OhxXlXlIL._SL1000_.jpg" alt="Smartphone" class="product-image">
+                    <span>Samsung Galaxy M32</span>
+                </td>
+                <td>₹12,499</td>
+                <td>₹12,199</td>
+                <td>₹12,599</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
